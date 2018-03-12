@@ -9,8 +9,8 @@
 build/
 |- index.html _________________________________ # application html 
 src/
-|- App.jsx ____________________________________ # Application init
 |- index.jsx __________________________________ # Application entry point
+|- App.jsx ____________________________________ # Application init
 |  |- Components/
 |    |- hello-world/ 
 |       |- index.jsx _________________________ # Sample component
