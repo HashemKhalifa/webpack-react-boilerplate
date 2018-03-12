@@ -1,0 +1,7 @@
+{
+  "presets": ["@babel/env", "@babel/react", "stage-2"],
+  "plugins": [
+    "@babel/plugin-transform-runtime",
+    ["@babel/plugin-proposal-class-properties", { "loose": true }]
+  ]
+}

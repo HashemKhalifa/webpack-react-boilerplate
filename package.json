@@ -1,0 +1,72 @@
+{
+  "name": "@HashemKhalifa/webpack-react-boilerplate",
+  "version": "1.0.0",
+  "description": "Boilerplate for react and webpack",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --config ./webpack.config.js --mode development",
+    "build": "webpack --config ./webpack.config.js --mode production",
+    "postinstall": "lerna bootstrap",
+    "format": "prettier --write 'packages/**/*.js'",
+    "test": "jest --watchAll --coverage",
+    "precommit": "pretty-quick --staged"
+  },
+  "jest": {
+    "automock": false,
+    "testEnvironment": "node",
+    "moduleNameMapper": {
+      "\\.(css|less)$": "identity-obj-proxy"
+    }
+  },
+  "repository": "https://github.com/HashemKhalifa/webpack-react-boilerplate",
+  "author": "HashemKhalifa",
+  "license": "Proprietary",
+  "private": false,
+  "engines": {
+    "node": ">=8",
+    "npm": ">=3"
+  },
+  "dependencies": {
+    "lodash": "^4.17.5",
+    "prop-types": "^15.6.1",
+    "react": "^16.3.0-alpha.1",
+    "react-dom": "^16.2.0",
+    "react-tabs": "^2.2.1"
+  },
+  "devDependencies": {
+    "@babel/core": "7.0.0-beta.40",
+    "@babel/plugin-proposal-class-properties": "7.0.0-beta.40",
+    "@babel/register": "7.0.0-beta.40",
+    "@babel/runtime": "7.0.0-beta.40",
+    "babel-core": "^7.0.0-0",
+    "@babel/plugin-transform-runtime": "7.0.0-beta.40",
+    "@babel/polyfill": "7.0.0-beta.40",
+    "@babel/preset-env": "7.0.0-beta.40",
+    "@babel/preset-react": "7.0.0-beta.40",
+    "babel-eslint": "8.2.2",
+    "babel-jest": "22.4.1",
+    "babel-loader": "8.0.0-beta.2",
+    "babel-plugin-lodash": "3.3.2",
+    "babel-preset-stage-2": "7.0.0-beta.3",
+    "css-loader": "^0.28.10",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
+    "eslint": "^4.18.2",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-loader": "^2.0.0",
+    "eslint-plugin-import": "^2.9.0",
+    "eslint-plugin-jest": "^21.13.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-react": "^7.7.0",
+    "husky": "^0.14.3",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^22.4.2",
+    "prettier": "1.11.1",
+    "pretty-quick": "^1.4.1",
+    "react-hot-loader": "^4.0.0",
+    "style-loader": "^0.20.2",
+    "webpack": "^4.1.1",
+    "webpack-cli": "^2.0.10",
+    "webpack-dev-server": "^3.1.0"
+  }
+}

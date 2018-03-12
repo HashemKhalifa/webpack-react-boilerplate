@@ -1,0 +1,26 @@
+# Cruft
+*~
+*#
+.#*
+.DS_Store
+
+# Test
+coverage
+.eslintcache
+
+# Logs
+*.log
+
+# npm & yarn
+node_modules/
+.npm
+.yarn-integrity
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+yarn.lock*
+package-lock.json
+/dist/bundle.js
+# Editor/IDE
+.idea
+packages/api/etc/
