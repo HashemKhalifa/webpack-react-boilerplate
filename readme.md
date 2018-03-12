@@ -3,6 +3,20 @@
 > Minimal webpack and react boilerplate using latest version of react and babel as well as jest and enzyme for more details about technologies used. [click](#technologies-used) 
 > live reload ;)
 
+### Project structure
+
+````
+build/
+|- index.html _________________________________ # application html 
+src/
+|- App.jsx ____________________________________ # Application init
+|- index.jsx __________________________________ # Application entry point
+|  |- Components/
+|    |- hello-world/ 
+|       |- index.jsx _________________________ # Sample component
+````
+
+
 
 
 ### Table of contents
