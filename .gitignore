@@ -20,7 +20,7 @@ yarn-debug.log*
 yarn-error.log*
 yarn.lock*
 package-lock.json
-/dist/bundle.js
+/build/bundle.js
 # Editor/IDE
 .idea
 packages/api/etc/

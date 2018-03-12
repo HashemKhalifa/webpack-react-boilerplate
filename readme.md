@@ -1,8 +1,9 @@
 # # Webpack react minimal boilerplate
 
-> Minimal webpack and react boilerplate using latest version of react and babel as well as jest and enzyme for more details about technologies used. [click](#technologies-used)
+> Minimal webpack and react boilerplate using latest version of react and babel as well as jest and enzyme for more details about technologies used. [click](#technologies-used) 
+> live reload ;)
 
----
+
 
 ### Table of contents
 
@@ -45,3 +46,5 @@
 * [Eslint](https://github.com/eslint/eslint/) with airbnb config
 * [Prettier](https://github.com/prettier/prettier) [ Code formatter ]
 * [Style](https://github.com/webpack-contrib/style-loader) & [CSS Loader](https://github.com/webpack-contrib/css-loader)
+
+
