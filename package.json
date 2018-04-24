@@ -4,8 +4,7 @@
   "description": "Boilerplate for react and webpack",
   "main": "index.js",
   "scripts": {
-    "start":
-      "webpack-dev-server --config ./webpack.config.js --mode development",
+    "start": "webpack-dev-server --config ./webpack.config.js --mode development",
     "build": "webpack --config ./webpack.config.js --mode production",
     "format": "prettier --write 'packages/**/*.js'",
     "test": "jest --watchAll --coverage",
@@ -35,13 +34,13 @@
   "devDependencies": {
     "@babel/core": "7.0.0-beta.46",
     "@babel/plugin-proposal-class-properties": "7.0.0-beta.46",
-    "@babel/register": "7.0.0-beta.46",
-    "@babel/runtime": "7.0.0-beta.46",
-    "babel-core": "^7.0.0-0",
     "@babel/plugin-transform-runtime": "7.0.0-beta.46",
     "@babel/polyfill": "7.0.0-beta.46",
     "@babel/preset-env": "7.0.0-beta.46",
     "@babel/preset-react": "7.0.0-beta.46",
+    "@babel/register": "7.0.0-beta.46",
+    "@babel/runtime": "7.0.0-beta.46",
+    "babel-core": "^7.0.0-0",
     "babel-eslint": "8.2.3",
     "babel-jest": "22.4.3",
     "babel-loader": "8.0.0-beta.2",
@@ -57,6 +56,7 @@
     "eslint-plugin-jest": "^21.13.0",
     "eslint-plugin-jsx-a11y": "^6.0.3",
     "eslint-plugin-react": "^7.7.0",
+    "html-webpack-plugin": "^3.2.0",
     "husky": "^0.14.3",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^22.4.2",
@@ -64,7 +64,7 @@
     "pretty-quick": "^1.4.1",
     "react-hot-loader": "^4.0.0",
     "style-loader": "^0.21.0",
-    "webpack": "^4.1.1",
+    "webpack": "4.6.0",
     "webpack-cli": "^2.0.10",
     "webpack-dev-server": "^3.1.0"
   }
