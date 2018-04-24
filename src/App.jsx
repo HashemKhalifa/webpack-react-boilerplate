@@ -1,18 +1,16 @@
-import React, { Component } from 'react';
-import HelloWorld from './components/hello-world';
+import React, { Component } from "react";
+import { hot } from "react-hot-loader";
+import HelloWorld from "./components/hello-world";
 
 class App extends Component {
   constructor(props) {
     super(props);
-    this.state = {
-    };
+    this.state = {};
   }
 
   render() {
-    return (
-      <HelloWorld title="Hello from React and webpack ;)" />
-    );
+    return <HelloWorld title="Hello from React and webpack" />;
   }
 }
 
-export default App;
+export default hot(module)(App);

@@ -2,6 +2,7 @@
   "presets": ["@babel/env", "@babel/react", "stage-2"],
   "plugins": [
     "@babel/plugin-transform-runtime",
+    "react-hot-loader/babel",
     ["@babel/plugin-proposal-class-properties", { "loose": true }]
   ]
 }
