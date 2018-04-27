@@ -9,7 +9,15 @@
     "build": "webpack --config ./webpack.config.js --mode production",
     "format": "prettier --write 'packages/**/*.js'",
     "test": "jest --watchAll --coverage",
-    "precommit": "pretty-quick --staged"
+    "precommit": "lint-staged"
+  },
+  "lint-staged": {
+    "*.{js,json,css,md}": ["prettier --write --single-quote", "git add"],
+    "*.{jsx, js}": [
+      "prettier --write --single-quote",
+      "eslint --fix",
+      "git add"
+    ]
   },
   "jest": {
     "automock": false,
@@ -62,6 +70,7 @@
     "husky": "^0.14.3",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^22.4.2",
+    "lint-staged": "^7.0.5",
     "prettier": "1.12.1",
     "pretty-quick": "^1.4.1",
     "style-loader": "^0.21.0",
