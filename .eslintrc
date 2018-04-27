@@ -65,8 +65,7 @@
     "import/no-unresolved": 0,
     "import/no-extraneous-dependencies": 0,
     "import/extensions": 0,
-    "babel/object-curly-spacing": 0,
-    "react/jsx-curly-brace-presence": [true]
+    "babel/object-curly-spacing": 0
   },
   "env": {
     "jest/globals": true
