@@ -1,4 +1,3 @@
-const webpack = require('webpack');
 const commonPaths = require('./paths');
 
 module.exports = {
