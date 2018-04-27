@@ -1,54 +1,10 @@
-const webpack = require('webpack');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
+const common = require('./webpack/webpack.common');
+const webpackMerge = require('webpack-merge');
 
-module.exports = {
-  entry: ['react-hot-loader/patch', './src/index.jsx'],
-  module: {
-    rules: [
-      {
-        test: /\.(js|jsx)$/,
-        exclude: /node_modules/,
-        use: ['babel-loader'],
-      },
-      {
-        test: /\.js$/,
-        exclude: /node_modules/,
-        use: ['babel-loader', 'eslint-loader'],
-      },
-      {
-        test: /\.css$/,
-        use: ['style-loader', 'css-loader'],
-      },
-      {
-        test: /\.(png|jpg|gif|svg)$/,
-        use: [
-          {
-            loader: 'file-loader',
-          },
-        ],
-      },
-      {
-        test: /\.(woff2|ttf|woff|eot)$/,
-        use: [
-          {
-            loader: 'file-loader',
-          },
-        ],
-      },
-    ],
-  },
-  resolve: {
-    extensions: ['*', '.js', '.jsx'],
-  },
-  output: {
-    path: `${__dirname}/build`,
-    filename: 'bundle.js',
-  },
-  plugins: [
-    new webpack.ProgressPlugin(),
-    new HtmlWebpackPlugin({
-      filename: 'index.html',
-      template: `${__dirname}/src/template.html`,
-    }),
-  ],
+const envs = {
+  development: 'dev',
+  production: 'prod',
 };
+const env = envs[process.env.NODE_ENV || 'development'];
+const envConfig = require(`./webpack/webpack.${env}.js`);
+module.exports = webpackMerge(common, envConfig);
