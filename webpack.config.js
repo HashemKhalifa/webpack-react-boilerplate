@@ -23,18 +23,18 @@ module.exports = {
         test: /\.(png|jpg|gif|svg)$/,
         use: [
           {
-            loader: "file-loader"
-          }
-        ]
+            loader: 'file-loader',
+          },
+        ],
       },
       {
         test: /\.(woff2|ttf|woff|eot)$/,
         use: [
           {
-            loader: "file-loader"
-          }
-        ]
-      }
+            loader: 'file-loader',
+          },
+        ],
+      },
     ],
   },
   resolve: {

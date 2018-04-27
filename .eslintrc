@@ -68,6 +68,9 @@
     "babel/object-curly-spacing": 0
   },
   "env": {
-    "jest/globals": true
+    "es6": true,
+    "jest": true,
+    "browser": true,
+    "node": true
   }
 }
