@@ -35,7 +35,7 @@
     "npm": ">=3"
   },
   "dependencies": {
-    "lodash": "4.17.5",
+    "lodash": "4.17.10",
     "prop-types": "15.6.1",
     "react": "16.3.2",
     "react-dom": "16.3.2",
