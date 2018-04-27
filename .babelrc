@@ -1,5 +1,5 @@
 {
-  "presets": ["@babel/env", "@babel/react", "stage-2"],
+  "presets": ["@babel/preset-env", "@babel/preset-react", "stage-2"],
   "plugins": [
     "@babel/plugin-transform-runtime",
     "react-hot-loader/babel",
