@@ -35,7 +35,6 @@ module.exports = {
       },
     ],
   },
-  stats: 'none',
   resolve: {
     extensions: ['*', '.js', '.jsx'],
   },
