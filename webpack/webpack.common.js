@@ -11,6 +11,9 @@ module.exports = {
         test: /\.(js|jsx)$/,
         loader: 'eslint-loader',
         exclude: /(node_modules)/,
+        options: {
+          emitWarning: process.env.NODE_ENV !== 'production',
+        },
       },
       {
         test: /\.(js|jsx)$/,
@@ -22,6 +25,9 @@ module.exports = {
         use: [
           {
             loader: 'file-loader',
+            options: {
+              outputPath: commonPaths.imagesFolder,
+            },
           },
         ],
       },
@@ -30,6 +36,9 @@ module.exports = {
         use: [
           {
             loader: 'file-loader',
+            options: {
+              outputPath: commonPaths.fontsFolder,
+            },
           },
         ],
       },

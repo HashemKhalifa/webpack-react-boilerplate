@@ -5,7 +5,7 @@ const CleanWebpackPlugin = require('clean-webpack-plugin');
 module.exports = {
   mode: 'production',
   output: {
-    filename: '[name].[hash].js',
+    filename: `${commonPaths.jsFolder}/[name].[hash].js`,
     path: commonPaths.outputPath,
     chunkFilename: '[name].[chunkhash].js',
   },
@@ -18,9 +18,11 @@ module.exports = {
     ],
   },
   plugins: [
-    new CleanWebpackPlugin(['dist'], { root: commonPaths.root }),
+    new CleanWebpackPlugin([commonPaths.outputPath.split('/').pop()], {
+      root: commonPaths.root,
+    }),
     new MiniCssExtractPlugin({
-      filename: '[name].css',
+      filename: `${commonPaths.cssFolder}/[name].css`,
       chunkFilename: '[id].css',
     }),
   ],
