@@ -1,36 +1,40 @@
 {
   "parser": "babel-eslint",
-  "plugins": [
-    "react",
-    "jest"
-  ],
-  "extends": ["airbnb", "plugin:jest/recommended"],
+  "plugins": ["react", "jest", "prettier"],
+  "extends": ["airbnb", "plugin:prettier/recommended", "prettier/react"],
   "globals": {
     "React": true,
     "document": true,
+    "window": true,
+    "jQuery": true,
+    "$": true,
+    "localStorage": true,
     "fetch": true
   },
   "rules": {
     "indent": ["error", 2],
     "react/prefer-stateless-function": "warn",
-    "react/self-closing-comp": ["warn", {
-      "component": true,
-      "html": false
-    }],
-    "react/sort-comp": [1, {
-      "order": [
-        "static-methods",
-        "lifecycle",
-        "everything-else",
-        "rendering"
-      ],
-      "groups": {
-        "rendering": [
-          "/^render.+$/",
-          "render"
-        ]
+    "react/self-closing-comp": [
+      "warn",
+      {
+        "component": true,
+        "html": false
       }
-    }],
+    ],
+    "react/sort-comp": [
+      1,
+      {
+        "order": [
+          "static-methods",
+          "lifecycle",
+          "everything-else",
+          "rendering"
+        ],
+        "groups": {
+          "rendering": ["/^render.+$/", "render"]
+        }
+      }
+    ],
     "jest/no-disabled-tests": "warn",
     "jest/no-focused-tests": "error",
     "jest/no-identical-title": "error",
@@ -44,10 +48,13 @@
     "react/jsx-curly-spacing": ["warn", "never"],
     "react/jsx-filename-extension": ["warn", { "extensions": [".jsx"] }],
     "react/jsx-first-prop-new-line": ["warn", "multiline"],
-    "react/jsx-handler-names": ["warn", {
-      "eventHandlerPrefix": "handle",
-      "eventHandlerPropPrefix": "on"
-    }],
+    "react/jsx-handler-names": [
+      "warn",
+      {
+        "eventHandlerPrefix": "handle",
+        "eventHandlerPropPrefix": "on"
+      }
+    ],
     "react/jsx-indent": ["warn", 2],
     "react/jsx-key": "error",
     "react/jsx-wrap-multilines": ["warn"],
@@ -58,10 +65,10 @@
     "import/no-unresolved": 0,
     "import/no-extraneous-dependencies": 0,
     "import/extensions": 0,
-    "babel/object-curly-spacing": 0
+    "babel/object-curly-spacing": 0,
+    "react/jsx-curly-brace-presence": [true]
   },
   "env": {
     "jest/globals": true
   }
-
 }
