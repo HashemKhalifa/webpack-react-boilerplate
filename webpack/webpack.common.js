@@ -1,7 +1,6 @@
 const webpack = require('webpack');
 const commonPaths = require('./paths');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const Stylish = require('webpack-stylish');
 
 module.exports = {
   entry: commonPaths.entryPath,
@@ -36,12 +35,12 @@ module.exports = {
       },
     ],
   },
+  stats: 'none',
   resolve: {
     extensions: ['*', '.js', '.jsx'],
   },
   plugins: [
     new webpack.ProgressPlugin(),
-    new Stylish(),
     new HtmlWebpackPlugin({
       template: commonPaths.templatePath,
     }),
