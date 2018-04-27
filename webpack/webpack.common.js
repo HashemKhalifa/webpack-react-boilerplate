@@ -11,9 +11,6 @@ module.exports = {
         test: /\.(js|jsx)$/,
         loader: 'eslint-loader',
         exclude: /(node_modules)/,
-        options: {
-          emitWarning: process.env.NODE_ENV !== 'production',
-        },
       },
       {
         test: /\.(js|jsx)$/,
