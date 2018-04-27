@@ -19,6 +19,22 @@ module.exports = {
         test: /\.css$/,
         use: ['style-loader', 'css-loader'],
       },
+      {
+        test: /\.(png|jpg|gif|svg)$/,
+        use: [
+          {
+            loader: 'file-loader',
+          },
+        ],
+      },
+      {
+        test: /\.(woff2|ttf|woff|eot)$/,
+        use: [
+          {
+            loader: 'file-loader',
+          },
+        ],
+      },
     ],
   },
   resolve: {
@@ -29,6 +45,7 @@ module.exports = {
     filename: 'bundle.js',
   },
   plugins: [
+    new webpack.ProgressPlugin(),
     new HtmlWebpackPlugin({
       filename: 'index.html',
       template: `${__dirname}/src/template.html`,
