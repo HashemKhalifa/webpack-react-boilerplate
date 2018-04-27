@@ -31,7 +31,7 @@
   "license": "ISC",
   "private": false,
   "engines": {
-    "node": ">=9",
+    "node": ">=8",
     "npm": ">=3"
   },
   "dependencies": {
