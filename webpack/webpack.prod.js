@@ -18,7 +18,7 @@ module.exports = {
     ],
   },
   plugins: [
-    new CleanWebpackPlugin(['dist'], { root: commonPaths.root }),
+    new CleanWebpackPlugin(['build'], { root: commonPaths.root }),
     new MiniCssExtractPlugin({
       filename: '[name].css',
       chunkFilename: '[id].css',
