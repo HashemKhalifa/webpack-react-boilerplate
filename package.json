@@ -21,7 +21,7 @@
     "automock": false,
     "testEnvironment": "node",
     "moduleNameMapper": {
-      "\\.(css|less)$": "identity-obj-proxy"
+      "\\.(css|scss)$": "identity-obj-proxy"
     }
   },
   "repository": "https://github.com/HashemKhalifa/webpack-react-boilerplate",
