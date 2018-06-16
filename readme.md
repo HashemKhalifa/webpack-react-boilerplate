@@ -31,7 +31,7 @@ webpack
 ````
 
 
-#### Install
+### Install
 
 Installation
 1- Clone the boilerplate repo
@@ -48,7 +48,7 @@ Installation
 `yarn test`
 
 
-#### Configuration
+### Configuration
 * Webpack Config paths based on your file structure you can go to `webpack/paths.js` and modify the source and file names based on your need.
 * `webpack/webpack.common.js` config common webpack for both dev and production environments.
 * webpack/webpack.dev.js config webpack for dev environment.
@@ -62,7 +62,7 @@ Installation
 
 
 * [Webpack 4](https://github.com/webpack/webpack) [ Using the new development mood ]
-* [Babel 7](https://github.com/babel/babel) [ transforming JSX and es6 ]
+* [Babel 7](https://github.com/babel/babel) [ transforming JSX and ES6,ES7,ES8 ]
 * [React](https://github.com/facebook/react) `16.3` for the benefit of Context API.
 * [Lodash](https://github.com/lodash/lodash)
 * [Jest](https://github.com/facebook/jest) [ Unit test]
