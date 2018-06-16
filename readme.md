@@ -23,11 +23,12 @@ src/
 |  |- Components/
 |    |- hello-world/ 
 |       |- index.jsx _______________________ # Sample component
+
 webpack
 |- paths.js ________________________________ # webpack paths needed
 |- webpack.common.js _______________________ # common webpack config
 |- webpack.dev.js __________________________ # development config
-|- webpack.prod.js _________________________ # production config|       |- index.jsx _________________________ # Sample component
+|- webpack.prod.js _________________________ # production config      
 ````
 
 
