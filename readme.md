@@ -1,55 +1,65 @@
 ## Webpack react minimal boilerplate
 
 > Minimal webpack and react boilerplate using latest version of react and babel as well as jest and enzyme for more details about technologies used. [click](#technologies-used) 
-> live reload ;)
+> with real time server changes ;)
+
+
+### Table of contents
+[Project structure](#project-structure)
+
+[Install](#install)
+
+[Configuration](#configuration)
+
+[Technologies used](#technologies-used)
 
 ### Project structure
 
 ````
 build/
-|- index.html _________________________________ # application html 
 src/
-|- index.jsx __________________________________ # Application entry point
-|- App.jsx ____________________________________ # Application init
+|- index.jsx _______________________________ # Application entry 
+|- App.jsx _________________________________ # Application init
 |  |- Components/
 |    |- hello-world/ 
-|       |- index.jsx _________________________ # Sample component
+|       |- index.jsx _______________________ # Sample component
+webpack
+|- paths.js ________________________________ # webpack paths needed
+|- webpack.common.js _______________________ # common webpack config
+|- webpack.dev.js __________________________ # development config
+|- webpack.prod.js _________________________ # production config|       |- index.jsx _________________________ # Sample component
 ````
 
 
-
-
-### Table of contents
-
-[Install](#install)
-
-[Run development](#run-development)
-
-[Unit testing](#unit-testing)
-
-[Bundling](#bundling)
-
-[Technologies used](#technologies-used)
-
 #### Install
 
-* `npm install` or `yarn` to install all dependency.
+Installation
+1- Clone the boilerplate repo
 
-#### Run development
+`git clone git@github.com:HashemKhalifa/webpack-react-boilerplate.git`
 
-* Run `yarn start`
+2- `yarn` or `npm install` to install npm packages
 
-#### Unit testing
+3- start dev server using `yarn start`.
 
-> Will run watch all and coverage
+3- build and bundling your resources for production `yarn build`.
 
-* `yarn test`
+4- Unit testing will watch all your changes in the test files as well as create coverage folder for you. 
+`yarn test`
 
-#### Bundling
 
-* Run `yarn build`
+#### Configuration
+* Webpack Config paths based on your file structure you can go to `webpack/paths.js` and modify the source and file names based on your need.
+* `webpack/webpack.common.js` config common webpack for both dev and production environments.
+* webpack/webpack.dev.js config webpack for dev environment.
+* `webpack/webpack.prod.js` config webpack for production environment.
+* `/webpack.config.js` main webpack config that merge common and webpack environment based config.
+* Enzyme config `/setupTest.js` here you will have all setup for enzyme to test your component.
+* Prettier config `/.prettierc`.
+
 
 #### Technologies used
+
 
 * [Webpack 4](https://github.com/webpack/webpack) [ Using the new development mood ]
 * [Babel 7](https://github.com/babel/babel) [ transforming JSX and es6 ]
@@ -59,6 +69,7 @@ src/
 * [Enzyme](http://airbnb.io/enzyme/) for UI testing.
 * [Eslint](https://github.com/eslint/eslint/) with airbnb config
 * [Prettier](https://github.com/prettier/prettier) [ Code formatter ]
-* [Style](https://github.com/webpack-contrib/style-loader) & [CSS Loader](https://github.com/webpack-contrib/css-loader)
-
-
+* [Style](https://github.com/webpack-contrib/style-loader) & [CSS Loader](https://github.com/webpack-contrib/css-loader) & [SASS-loader](https://github.com/webpack-contrib/sass-loader)
+* [CSS modules](https://github.com/css-modules/css-modules) [ Isolated style based on each component ]
+* [React hot loader](https://github.com/gaearon/react-hot-loader)
+* [Webpack serve](https://github.com/webpack-contrib/webpack-serve) [ using web socket ]
