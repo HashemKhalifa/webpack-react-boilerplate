@@ -22,7 +22,16 @@
     "testEnvironment": "node",
     "moduleNameMapper": {
       "\\.(css|scss)$": "identity-obj-proxy"
-    }
+    },
+    "transform": {
+      "^.+\\.(js|jsx)$": "babel-jest"
+    },
+    "setupTestFrameworkScriptFile": "<rootDir>/setupTests.js",
+    "moduleFileExtensions": [
+      "js",
+      "json",
+      "jsx"
+    ]
   },
   "repository": "https://github.com/HashemKhalifa/webpack-react-boilerplate",
   "author": "HashemKhalifa",
