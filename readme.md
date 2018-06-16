@@ -7,7 +7,7 @@
 ### Table of contents
 [Project structure](#project-structure)
 
-[Install](#install)
+[Installation](#installation)
 
 [Configuration](#configuration)
 
@@ -31,9 +31,8 @@ webpack
 ````
 
 
-### Install
+### Installation
 
-Installation
 1- Clone the boilerplate repo
 
 `git clone git@github.com:HashemKhalifa/webpack-react-boilerplate.git`
