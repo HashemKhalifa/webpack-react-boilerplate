@@ -1,7 +1,10 @@
 ## Webpack react minimal boilerplate
 
+
 > Minimal webpack and react boilerplate using latest version of react and babel as well as jest and enzyme for more details about technologies used. [click](#technologies-used) 
 > with real time server changes ;)
+
+> check out  [Medium article](https://medium.com/@hashem.khalifa/minimal-webpack-and-react-starter-boilerplate-seriously-d90a673e134f) for more details 
 
 
 ### Table of contents
