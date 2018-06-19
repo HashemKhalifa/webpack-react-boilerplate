@@ -60,6 +60,7 @@ webpack
 * `/webpack.config.js` main webpack config that merge common and webpack environment based config.
 * Enzyme config `/setupTest.js` here you will have all setup for enzyme to test your component.
 * Prettier config `/.prettierc`.
+* Browsers list config `/.browserslistrc`.
 
 
 #### Technologies used
