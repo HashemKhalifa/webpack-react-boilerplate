@@ -65,7 +65,7 @@ webpack
 #### Technologies used
 
 
-* [Webpack 4](https://github.com/webpack/webpack) [ Using the new development mood ]
+* [Webpack 4](https://github.com/webpack/webpack) 
 * [Babel 7](https://github.com/babel/babel) [ transforming JSX and ES6,ES7,ES8 ]
 * [React](https://github.com/facebook/react) `16.4`
 * [Lodash](https://github.com/lodash/lodash)
