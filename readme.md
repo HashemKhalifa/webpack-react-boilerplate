@@ -67,7 +67,7 @@ webpack
 
 * [Webpack 4](https://github.com/webpack/webpack) [ Using the new development mood ]
 * [Babel 7](https://github.com/babel/babel) [ transforming JSX and ES6,ES7,ES8 ]
-* [React](https://github.com/facebook/react) `16.3` for the benefit of Context API.
+* [React](https://github.com/facebook/react) `16.4`
 * [Lodash](https://github.com/lodash/lodash)
 * [Jest](https://github.com/facebook/jest) [ Unit test]
 * [Enzyme](http://airbnb.io/enzyme/) for UI testing.
