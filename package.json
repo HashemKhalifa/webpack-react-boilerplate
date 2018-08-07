@@ -1,7 +1,7 @@
 {
   "name": "@HashemKhalifa/webpack-react-boilerplate",
   "version": "1.0.0",
-  "description": "Boilerplate for react and webpack",
+  "description": "Boilerplate for react and webpack4 using CSS-Modules, react hot loader, webpack-serve",
   "main": "index.js",
   "scripts": {
     "start": "cross-env NODE_ENV=development webpack-serve --open",
