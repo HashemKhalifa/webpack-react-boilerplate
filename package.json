@@ -18,16 +18,23 @@
     ]
   },
   "jest": {
-    "automock": false,
-    "testEnvironment": "node",
+    "testEnvironment": "jsdom",
+    "moduleDirectories": [
+      "src",
+      "node_modules"
+    ],
     "moduleNameMapper": {
-      "\\.(css|scss)$": "identity-obj-proxy"
+      "\\.(css|scss)$": "<rootDir>/__mocks__/styleMock.js",
+      "\\.(jpg|gif|ttf|eot|svg)$": "<rootDir>/__mocks__/fileMock.js"
     },
     "transform": {
-      "^.+\\.(js|jsx)$": "babel-jest"
+      "^.+\\.(js|jsx)$": "babel-jest",
+      ".+\\.(css|styl|less|sass|scss)$": "<rootDir>/node_modules/jest-css-modules-transform"
     },
     "setupTestFrameworkScriptFile": "<rootDir>/setupTests.js",
     "moduleFileExtensions": [
+      "css",
+      "scss",
       "js",
       "json",
       "jsx"
@@ -75,6 +82,7 @@
     "babel-plugin-lodash": "3.3.4",
     "browserslist": "4.1.1",
     "clean-webpack-plugin": "0.1.19",
+    "connect-history-api-fallback": "^1.5.0",
     "cross-env": "5.2.0",
     "css-loader": "1.0.0",
     "enzyme": "3.6.0",
@@ -94,7 +102,11 @@
     "husky": "0.14.3",
     "identity-obj-proxy": "3.0.0",
     "jest": "23.6.0",
+    "jest-css-modules-transform": "^2.0.2",
     "jest-enzyme": "6.0.4",
+    "jest-fetch-mock": "^1.6.6",
+    "jsdom": "^12.0.0",
+    "koa-connect": "^2.0.1",
     "lint-staged": "7.2.2",
     "mini-css-extract-plugin": "0.4.2",
     "node-sass": "4.9.3",
