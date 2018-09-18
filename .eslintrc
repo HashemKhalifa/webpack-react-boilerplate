@@ -11,6 +11,7 @@
     "localStorage": true,
     "fetch": true
   },
+  "root": true,
   "rules": {
     "indent": ["error", 2],
     "react/prefer-stateless-function": "warn",
