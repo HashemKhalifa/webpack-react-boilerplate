@@ -1,6 +1,8 @@
 const webpack = require('webpack');
-const commonPaths = require('./paths');
+const convert = require('koa-connect');
+const history = require('connect-history-api-fallback');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const commonPaths = require('./paths');
 
 module.exports = {
   entry: commonPaths.entryPath,
@@ -44,8 +46,19 @@ module.exports = {
       },
     ],
   },
+  serve: {
+    add: app => {
+      app.use(convert(history()));
+    },
+    content: commonPaths.entryPath,
+    dev: {
+      publicPath: commonPaths.outputPath,
+    },
+    open: true,
+  },
   resolve: {
-    extensions: ['*', '.js', '.jsx'],
+    modules: ['src', 'node_modules'],
+    extensions: ['*', '.js', '.jsx', '.css', '.scss'],
   },
   plugins: [
     new webpack.ProgressPlugin(),
