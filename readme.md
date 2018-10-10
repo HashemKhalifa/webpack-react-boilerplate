@@ -68,7 +68,7 @@ webpack
 
 * [Webpack 4](https://github.com/webpack/webpack) 
 * [Babel 7](https://github.com/babel/babel) [ transforming JSX and ES6,ES7,ES8 ]
-* [React](https://github.com/facebook/react) `16.4`
+* [React](https://github.com/facebook/react) `16.5`
 * [Lodash](https://github.com/lodash/lodash)
 * [Jest](https://github.com/facebook/jest) [ Unit test]
 * [Enzyme](http://airbnb.io/enzyme/) for UI testing.
@@ -78,4 +78,4 @@ webpack
 * [CSS modules](https://github.com/css-modules/css-modules) [ Isolated style based on each component ]
 * [Browsers list](https://github.com/browserslist/browserslist) [ Share target browsers between different front-end tools, like Autoprefixer, Stylelint and babel-preset-env ]
 * [React hot loader](https://github.com/gaearon/react-hot-loader)
-* [Webpack serve](https://github.com/webpack-contrib/webpack-serve) [ using web socket ]
+* [Webpack dev serve](https://github.com/webpack/webpack-dev-server) 
