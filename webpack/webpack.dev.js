@@ -1,3 +1,5 @@
+const webpack = require('webpack');
+
 const commonPaths = require('./paths');
 
 module.exports = {
@@ -27,4 +29,10 @@ module.exports = {
       },
     ],
   },
+  devServer: {
+    contentBase: commonPaths.outputPath,
+    compress: true,
+    hot: true,
+  },
+  plugins: [new webpack.HotModuleReplacementPlugin()],
 };
