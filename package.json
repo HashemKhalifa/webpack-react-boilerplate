@@ -9,13 +9,13 @@
     "format": "prettier --write 'packages/**/*.js'",
     "test": "jest --watchAll --coverage",
     "precommit": "lint-staged",
+    "fix": "lint-staged",
     "c9": "NODE_ENV=development webpack-dev-server --host $IP --port $PORT --public $C9_HOSTNAME --progress --hot"
   },
   "lint-staged": {
     "*.{js,jsx,css,md}": [
       "prettier --write --single-quote",
-      "eslint --fix",
-      "git add"
+      "eslint --fix"
     ]
   },
   "jest": {

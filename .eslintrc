@@ -14,6 +14,7 @@
   "root": true,
   "rules": {
     "indent": ["error", 2],
+    "no-plusplus": ["error", { "allowForLoopAfterthoughts": true }],
     "react/prefer-stateless-function": "warn",
     "react/self-closing-comp": [
       "warn",
@@ -43,19 +44,17 @@
     "jest/valid-expect": "error",
     "react/require-default-props": 0,
     "jsx-a11y/href-no-hash": "off",
+    "jsx-a11y/click-events-have-key-events": "off",
+    "jsx-a11y/no-static-element-interactions": "off",
     "jsx-a11y/anchor-is-valid": ["warn", { "aspects": ["invalidHref"] }],
     "react/jsx-boolean-value": ["warn", "never"],
-    "react/jsx-closing-bracket-location": ["warn", "after-props"],
+    "react/jsx-closing-bracket-location": "off",
+    "react/destructuring-assignment": "off",
     "react/jsx-curly-spacing": ["warn", "never"],
+    "react/jsx-handler-names": "off",
+    "react/no-access-state-in-setstate": "off",
     "react/jsx-filename-extension": ["warn", { "extensions": [".jsx"] }],
     "react/jsx-first-prop-new-line": ["warn", "multiline"],
-    "react/jsx-handler-names": [
-      "warn",
-      {
-        "eventHandlerPrefix": "handle",
-        "eventHandlerPropPrefix": "on"
-      }
-    ],
     "react/jsx-indent": ["warn", 2],
     "react/jsx-key": "error",
     "react/jsx-wrap-multilines": ["warn"],
