@@ -1,15 +1,52 @@
 import React, { Component } from 'react';
 import { hot } from 'react-hot-loader';
-import HelloWorld from './components/hello-world';
+import { getInitialState } from './state';
+import style from './app.css';
+import Score from './components/score';
+import SimonButton from './components/button';
+import { startGame, showSequence, guess } from './state/game';
 
 class App extends Component {
   constructor(props) {
     super(props);
-    this.state = {};
+    this.state = getInitialState();
+  }
+  
+  onClick(color) {
+    if (this.state.status === 'Go!') {
+      this.setState(guess(this.state, color), () => {
+        if (this.state.status === 'Watch') {
+          console.log('NEXT ROUND');
+          this.launchSequence();
+        }
+      });
+    }
+  }
+  
+  onStart() {
+    if (this.state.status === 'Start!') {
+      showSequence(startGame(this.state), newState => this.setState(newState));
+    }
+  }
+  
+  launchSequence() {
+    showSequence(this.state, newState => this.setState(newState));
   }
 
+
   render() {
-    return <HelloWorld title="Hello from React webpack" />;
+    return (
+      <div>
+        <h1>Simon Says!</h1>
+        <div className={style.app}>
+          <Score score={this.state.score} status={this.state.status} start={this.onStart.bind(this)}/>
+          <SimonButton id={0} glow={this.state.seq[this.state.pos] === 0} color='red' onClick={this.onClick.bind(this)} />
+          <SimonButton id={1} glow={this.state.seq[this.state.pos] === 1} color='green'onClick={this.onClick.bind(this)} />
+          <SimonButton id={2} glow={this.state.seq[this.state.pos] === 2} color='blue' onClick={this.onClick.bind(this)} />
+          <SimonButton id={3} glow={this.state.seq[this.state.pos] === 3} color='orange' onClick={this.onClick.bind(this)} />
+        </div>
+      </div>
+    );
   }
 }
 

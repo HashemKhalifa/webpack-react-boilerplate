@@ -1,0 +1,6 @@
+.text{
+    flex-basis: 3em;
+    border: 1px black solid;
+    font-size: 4rem;
+    text-align: center;
+}
