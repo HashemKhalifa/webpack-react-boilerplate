@@ -23,6 +23,17 @@
     "moduleDirectories": [
       "src",
       "node_modules"
+    ],
+    "transform": {
+      "^.+\\.js$": "<rootDir>/node_modules/babel-jest",
+      "^.+\\.(css|scss|less)$": "jest-css-modules"
+    },
+    "globals": {
+      "NODE_ENV": "test"
+    },
+    "moduleFileExtensions": [
+      "js",
+      "jsx"
     ]
   },
   "repository": "https://github.com/HashemKhalifa/webpack-react-boilerplate",
@@ -88,6 +99,7 @@
     "husky": "1.1.2",
     "identity-obj-proxy": "3.0.0",
     "jest": "23.6.0",
+    "jest-css-modules": "^1.1.0",
     "jest-css-modules-transform": "^2.0.2",
     "jest-enzyme": "7.0.0",
     "jest-fetch-mock": "^1.6.6",
