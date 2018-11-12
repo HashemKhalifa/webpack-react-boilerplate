@@ -23,22 +23,6 @@
     "moduleDirectories": [
       "src",
       "node_modules"
-    ],
-    "moduleNameMapper": {
-      "\\.(css|scss)$": "<rootDir>/__mocks__/styleMock.js",
-      "\\.(jpg|gif|ttf|eot|svg)$": "<rootDir>/__mocks__/fileMock.js"
-    },
-    "transform": {
-      "^.+\\.(js|jsx)$": "babel-jest",
-      ".+\\.(css|styl|less|sass|scss)$": "<rootDir>/node_modules/jest-css-modules-transform"
-    },
-    "setupTestFrameworkScriptFile": "<rootDir>/setupTests.js",
-    "moduleFileExtensions": [
-      "css",
-      "scss",
-      "js",
-      "json",
-      "jsx"
     ]
   },
   "repository": "https://github.com/HashemKhalifa/webpack-react-boilerplate",
@@ -61,7 +45,7 @@
     "babel-core": "7.0.0-bridge.0"
   },
   "devDependencies": {
-    "@babel/core": "7.1.2",
+    "@babel/core": "^7.1.2",
     "@babel/plugin-proposal-class-properties": "7.1.0",
     "@babel/plugin-proposal-decorators": "7.1.2",
     "@babel/plugin-proposal-export-namespace-from": "7.0.0",
@@ -77,9 +61,9 @@
     "@babel/preset-react": "7.0.0",
     "@babel/register": "7.0.0",
     "@babel/runtime": "7.1.2",
-    "babel-core": "7.0.0-beta.3",
+    "babel-core": "^7.0.0-bridge.0",
     "babel-eslint": "10.0.1",
-    "babel-jest": "23.6.0",
+    "babel-jest": "^23.6.0",
     "babel-loader": "8.0.4",
     "babel-plugin-lodash": "3.3.4",
     "browserslist": "4.3.4",
@@ -114,11 +98,12 @@
     "node-sass": "4.9.4",
     "prettier": "1.14.3",
     "pretty-quick": "1.8.0",
+    "regenerator-runtime": "^0.12.1",
     "sass-loader": "7.1.0",
     "style-loader": "0.23.1",
     "webpack": "4.23.1",
     "webpack-cli": "3.1.2",
-    "webpack-merge": "4.1.4",
-    "webpack-dev-server": "3.1.10"
+    "webpack-dev-server": "3.1.10",
+    "webpack-merge": "4.1.4"
   }
 }
