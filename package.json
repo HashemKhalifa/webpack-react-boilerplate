@@ -50,7 +50,6 @@
   },
   "dependencies": {
     "lodash": "4.17.11",
-    "npm-check-updates": "^2.14.2",
     "prop-types": "15.6.2",
     "react": "16.7.0",
     "react-dom": "16.7.0",
@@ -63,6 +62,7 @@
     "@babel/core": "7.2.2",
     "@babel/plugin-proposal-class-properties": "7.2.3",
     "@babel/plugin-proposal-decorators": "7.2.3",
+    "npm-check-updates": "^2.14.2",
     "@babel/plugin-proposal-export-namespace-from": "7.2.0",
     "@babel/plugin-proposal-function-sent": "7.2.0",
     "@babel/plugin-proposal-json-strings": "7.2.0",
