@@ -1,12 +1,5 @@
 {
-  "presets": [
-    ["env", {
-      "target": {
-        "browsers": "> 0.25%, not dead"
-      },
-      "models": false
-    }, "@babel/preset-env", "@babel/preset-react"]
-  ],
+  "presets": ["@babel/preset-env", "@babel/preset-react"],
   "plugins": [
     "@babel/plugin-transform-runtime",
     "react-hot-loader/babel",
