@@ -1,10 +1,15 @@
 ## Webpack react minimal boilerplate
-
+<p align="center">
+    <img alt="dependencies" title="dependencies" src="https://img.shields.io/david/hashemkhalifa/webpack-react-boilerplate.svg" >
+   <img alt="dependencies" title="dependencies" src="https://img.shields.io/github/last-commit/hashemkhalifa/webpack-react-boilerplate.svg" >
+</p>
 
 > Minimal webpack and react boilerplate using latest version of react and babel as well as jest and enzyme for more details about technologies used. [click](#technologies-used) 
 > with real time server changes ;)
 
 > check out  [Medium article](https://medium.com/@hashem.khalifa/minimal-webpack-and-react-starter-boilerplate-seriously-d90a673e134f) for more details 
+
+
 
 ![Real time change](https://cdn-images-1.medium.com/max/1600/1*0Slpwk3trmF7kLeoFp5UOw.gif)
 
