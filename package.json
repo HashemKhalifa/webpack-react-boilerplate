@@ -105,7 +105,7 @@
     "identity-obj-proxy": "3.0.0",
     "jest": "23.6.0",
     "jest-css-modules-transform": "2.1.1",
-    "jest-enzyme": "7.0.1",
+    "jest-enzyme": "7.0.2",
     "jest-fetch-mock": "2.1.1",
     "jsdom": "13.2.0",
     "lint-staged": "8.1.0",
