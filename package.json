@@ -91,7 +91,7 @@
     "eslint-config-airbnb": "17.1.0",
     "eslint-config-prettier": "3.6.0",
     "eslint-loader": "2.1.2",
-    "eslint-plugin-import": "2.14.0",
+    "eslint-plugin-import": "2.16.0",
     "eslint-plugin-jest": "22.1.2",
     "eslint-plugin-jsx-a11y": "6.1.2",
     "eslint-plugin-prettier": "3.0.1",
