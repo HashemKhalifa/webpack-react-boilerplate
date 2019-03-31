@@ -1,5 +1,5 @@
 {
-  "name": "@HashemKhalifa/webpack-react-boilerplate",
+  "name": "minimal-webpack-react",
   "version": "2.0.0",
   "description": "Boilerplate for react and webpack",
   "main": "index.js",
