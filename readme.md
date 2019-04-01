@@ -73,7 +73,7 @@ webpack
 
 * [Webpack 4](https://github.com/webpack/webpack) 
 * [Babel 7](https://github.com/babel/babel) [ transforming JSX and ES6,ES7,ES8 ]
-* [React](https://github.com/facebook/react) `16.6`
+* [React](https://github.com/facebook/react) `16.8`
 * [Lodash](https://github.com/lodash/lodash)
 * [Jest](https://github.com/facebook/jest) [ Unit test]
 * [Enzyme](http://airbnb.io/enzyme/) for UI testing.
