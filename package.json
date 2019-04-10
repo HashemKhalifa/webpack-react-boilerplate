@@ -109,7 +109,7 @@
     "jest-fetch-mock": "2.1.2",
     "jsdom": "14.0.0",
     "lint-staged": "8.1.5",
-    "mini-css-extract-plugin": "0.5.0",
+    "mini-css-extract-plugin": "0.6.0",
     "node-sass": "4.11.0",
     "npm-check-updates": "3.1.7",
     "prettier": "1.16.4",
