@@ -10,6 +10,10 @@
     "@babel/plugin-proposal-throw-expressions",
     "@babel/plugin-syntax-dynamic-import",
     "@babel/plugin-syntax-import-meta",
+    "@babel/plugin-transform-react-constant-elements",
+    "@babel/plugin-transform-react-inline-elements",
     "@babel/plugin-transform-runtime",
+    "transform-react-pure-class-to-function",
+    "transform-react-remove-prop-types",
   ]
 }
