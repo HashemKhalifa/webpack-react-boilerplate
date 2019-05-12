@@ -112,7 +112,7 @@
     "jest-css-modules-transform": "2.1.1",
     "jest-enzyme": "7.0.2",
     "jest-fetch-mock": "2.1.2",
-    "jsdom": "15.0.0",
+    "jsdom": "15.1.0",
     "lint-staged": "8.1.6",
     "mini-css-extract-plugin": "0.6.0",
     "node-sass": "4.12.0",
