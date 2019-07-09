@@ -116,7 +116,7 @@
     "lint-staged": "9.0.0",
     "mini-css-extract-plugin": "0.7.0",
     "node-sass": "4.12.0",
-    "npm-check-updates": "3.1.13",
+    "npm-check-updates": "3.1.18",
     "prettier": "1.18.2",
     "pretty-quick": "1.11.1",
     "sass-loader": "7.1.0",
