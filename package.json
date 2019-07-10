@@ -53,7 +53,7 @@
     "@babel/plugin-transform-react-inline-elements": "7.2.0",
     "babel-plugin-transform-react-pure-class-to-function": "1.0.1",
     "babel-plugin-transform-react-remove-prop-types": "0.4.24",
-    "lodash": "4.17.13",
+    "lodash": "4.17.14",
     "prop-types": "15.7.2",
     "react": "16.8.6",
     "react-dom": "16.8.6",
