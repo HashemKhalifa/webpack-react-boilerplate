@@ -7,8 +7,7 @@
     "start": "cross-env NODE_ENV=development webpack-dev-server --open",
     "build": "cross-env NODE_ENV=production webpack",
     "format": "prettier --write 'packages/**/*.js'",
-    "test": "jest --watchAll --coverage",
-    "precommit": "lint-staged"
+    "test": "jest --watchAll --coverage"
   },
   "lint-staged": {
     "*.{js,jsx,css,md}": [
@@ -16,6 +15,12 @@
       "eslint --fix",
       "git add"
     ]
+  },
+
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
   },
   "jest": {
     "testEnvironment": "jsdom",
@@ -53,11 +58,11 @@
     "@babel/plugin-transform-react-inline-elements": "7.2.0",
     "babel-plugin-transform-react-pure-class-to-function": "1.0.1",
     "babel-plugin-transform-react-remove-prop-types": "0.4.24",
-    "lodash": "4.17.14",
+    "lodash": "4.17.13",
     "prop-types": "15.7.2",
     "react": "16.8.6",
     "react-dom": "16.8.6",
-    "react-hot-loader": "4.12.6"
+    "react-hot-loader": "4.12.5"
   },
   "resolutions": {
     "babel-core": "7.0.0-bridge.0"
@@ -113,7 +118,7 @@
     "jest-enzyme": "7.0.2",
     "jest-fetch-mock": "2.1.2",
     "jsdom": "15.1.1",
-    "lint-staged": "9.2.0",
+    "lint-staged": "9.1.0",
     "mini-css-extract-plugin": "0.7.0",
     "node-sass": "4.12.0",
     "npm-check-updates": "3.1.18",
