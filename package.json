@@ -126,7 +126,7 @@
     "pretty-quick": "1.11.1",
     "sass-loader": "7.1.0",
     "style-loader": "0.23.1",
-    "webpack": "4.35.3",
+    "webpack": "4.36.1",
     "webpack-cli": "3.3.6",
     "webpack-dev-server": "3.7.2",
     "optimize-css-assets-webpack-plugin": "5.0.3",
