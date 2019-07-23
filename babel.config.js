@@ -1,4 +1,5 @@
 module.exports = function(api) {
+  const babelEnv = api.env();
   api.cache(true);
 
   const presets = [
@@ -16,7 +17,6 @@ module.exports = function(api) {
   ];
   const plugins = [
     '@babel/transform-react-constant-elements',
-    '@babel/transform-react-inline-elements',
     'transform-react-remove-prop-types',
     'transform-react-pure-class-to-function',
     '@babel/plugin-transform-runtime',
@@ -35,6 +35,10 @@ module.exports = function(api) {
     ['@babel/plugin-proposal-class-properties', { loose: true }],
     '@babel/plugin-proposal-json-strings',
   ];
+
+  if (babelEnv === 'production') {
+    plugins.push(['@babel/plugin-transform-react-inline-elements']);
+  }
 
   return {
     presets,
