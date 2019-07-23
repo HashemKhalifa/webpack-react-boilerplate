@@ -8,6 +8,7 @@ module.exports = function(api) {
         targets: {
           esmodules: true,
         },
+        corejs: '3.0.0',
         useBuiltIns: 'usage',
       },
     ],
