@@ -63,7 +63,7 @@
     "prop-types": "15.7.2",
     "react": "16.8.6",
     "react-dom": "16.8.6",
-    "react-hot-loader": "4.12.8"
+    "react-hot-loader": "4.12.10"
   },
   "resolutions": {
     "babel-core": "7.0.0-bridge.0"
