@@ -13,7 +13,6 @@
   },
   "root": true,
   "rules": {
-    "indent": ["error", 2],
     "react/prefer-stateless-function": "warn",
     "react/self-closing-comp": [
       "warn",
