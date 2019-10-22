@@ -61,8 +61,8 @@
     "core-js": "3.3.3",
     "lodash": "4.17.15",
     "prop-types": "15.7.2",
-    "react": "16.10.2",
-    "react-dom": "16.10.2",
+    "react": "16.11.0",
+    "react-dom": "16.11.0",
     "react-hot-loader": "4.12.15"
   },
   "resolutions": {
