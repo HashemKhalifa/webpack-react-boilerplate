@@ -125,7 +125,7 @@
     "prettier": "1.19.1",
     "pretty-quick": "2.0.1",
     "sass-loader": "8.0.0",
-    "style-loader": "1.0.2",
+    "style-loader": "1.1.1",
     "webpack": "4.41.4",
     "webpack-cli": "3.3.10",
     "webpack-dev-server": "3.10.1",
