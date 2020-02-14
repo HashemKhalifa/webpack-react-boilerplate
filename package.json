@@ -130,7 +130,7 @@
     "webpack-cli": "3.3.11",
     "webpack-dev-server": "3.10.3",
     "optimize-css-assets-webpack-plugin": "5.0.3",
-    "terser-webpack-plugin": "2.3.4",
+    "terser-webpack-plugin": "2.3.5",
     "webpack-merge": "4.2.2"
   }
 }
