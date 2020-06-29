@@ -105,7 +105,7 @@
     "eslint-plugin-jest": "23.17.1",
     "eslint-plugin-jsx-a11y": "6.3.1",
     "eslint-plugin-prettier": "3.1.4",
-    "eslint-plugin-react": "7.20.1",
+    "eslint-plugin-react": "7.20.2",
     "eslint-watch": "6.0.1",
     "file-loader": "6.0.0",
     "koa-connect": "2.1.0",
