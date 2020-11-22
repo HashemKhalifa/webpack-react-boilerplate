@@ -1,9 +1,9 @@
-const eslint = require('eslint');
 const webpack = require('webpack');
 const convert = require('koa-connect');
 const history = require('connect-history-api-fallback');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ScriptExtHtmlWebpackPlugin = require('script-ext-html-webpack-plugin');
+const ESLintPlugin = require('eslint-webpack-plugin');
 const commonPaths = require('./paths');
 
 module.exports = {
@@ -11,19 +11,18 @@ module.exports = {
   module: {
     rules: [
       {
-        enforce: 'pre',
         test: /\.(js|jsx)$/,
-        loader: 'eslint-loader',
+        loader: 'babel-loader',
         exclude: /(node_modules)/,
         options: {
-          formatter: eslint.CLIEngine.getFormatter('stylish'),
-          emitWarning: process.env.NODE_ENV !== 'production',
+          presets: ['@babel/react'],
+          plugins: [['import', { libraryName: 'antd', style: true }]],
         },
       },
       {
         test: /\.(js|jsx)$/,
-        loader: 'babel-loader',
-        exclude: /(node_modules)/,
+        use: 'react-hot-loader/webpack',
+        include: /node_modules/,
       },
       {
         test: /\.(png|jpg|gif|svg)$/,
@@ -70,6 +69,11 @@ module.exports = {
     }),
     new ScriptExtHtmlWebpackPlugin({
       defaultAttribute: 'async',
+    }),
+    new ESLintPlugin({
+      extensions: ['js', 'jsx', 'ts', 'tsx'],
+      fix: true,
+      emitWarning: process.env.NODE_ENV !== 'production',
     }),
   ],
 };
