@@ -115,7 +115,7 @@
     "husky": "4.3.5",
     "identity-obj-proxy": "3.0.0",
     "jest": "25.5.4",
-    "jest-css-modules-transform": "4.0.2",
+    "jest-css-modules-transform": "4.1.0",
     "jest-enzyme": "7.1.2",
     "jest-fetch-mock": "3.0.3",
     "jsdom": "16.4.0",
