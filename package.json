@@ -119,7 +119,7 @@
     "jest-enzyme": "7.1.2",
     "jest-fetch-mock": "3.0.3",
     "jsdom": "16.4.0",
-    "lint-staged": "10.5.3",
+    "lint-staged": "10.5.4",
     "mini-css-extract-plugin": "0.12.0",
     "node-sass": "4.14.1",
     "npm-check-updates": "10.3.1",
