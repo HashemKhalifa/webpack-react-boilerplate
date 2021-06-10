@@ -1,0 +1,19 @@
+name: Continous integeration
+
+on:
+  pull_request:
+    types: [assigned, opened, reopened, synchronize, edited]
+  push:
+    branches:
+      - feat/inspire/*
+      - develop
+      - main
+      - master
+    paths:
+      - "libs/inspire-common-components/**"
+
+jobs:
+  Linting:
+    runs-on: ubuntu-latest
+    steps:
+      -
