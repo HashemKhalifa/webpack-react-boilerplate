@@ -9,11 +9,17 @@ on:
       - develop
       - main
       - master
-    paths:
-      - "libs/inspire-common-components/**"
 
 jobs:
   Linting:
     runs-on: ubuntu-latest
     steps:
-      -
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: NodeJS
+        uses: actions/setup-node@v2
+        with:
+          node-version: 14
+      - name: checking the linting
+      - run: yarn lint
