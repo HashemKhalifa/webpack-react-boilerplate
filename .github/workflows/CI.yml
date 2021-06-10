@@ -22,4 +22,4 @@ jobs:
         with:
           node-version: 14
       - name: checking the linting
-      - run: yarn lint
+        run: yarn lint
