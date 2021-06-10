@@ -11,7 +11,7 @@ on:
       - master
 
 jobs:
-  Linting:
+  CI-Deployment:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
