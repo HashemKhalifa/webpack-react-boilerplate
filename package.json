@@ -7,7 +7,7 @@
     "start": "cross-env NODE_ENV=development webpack-dev-server --open",
     "build": "cross-env NODE_ENV=production webpack",
     "format": "prettier --write '**/*.js' --ignore-path .gitignore",
-    "lint": "eslint . --ext js,jsx,ts,tsx --max-warnings=0",
+    "lint": "eslint -c .eslintrc  --fix $(git diff --name-only remotes/origin/develop... --diff-filter=d | grep -E \"(.js$|.ts$|.tsx$|.jsx)\")",
     "test": "jest",
     "test-watch": "jest --watchAll --coverage"
   },
