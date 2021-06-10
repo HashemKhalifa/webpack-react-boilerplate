@@ -1,7 +1,7 @@
 {
   "name": "minimal-webpack-react",
   "version": "2.0.0",
-  "description": "Boilerplate for react and webpack",
+  "description": "Boilerplate for react  and webpack",
   "main": "index.js",
   "scripts": {
     "start": "cross-env NODE_ENV=development webpack-dev-server --open",
