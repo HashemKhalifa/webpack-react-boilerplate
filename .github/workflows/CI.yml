@@ -11,7 +11,7 @@ on:
       - master
 
 jobs:
-  Linting:
+  CI-Deployment:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -21,21 +21,26 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: 14
+      - uses: actions/cache@v2
+        id: yarn-cache
+        with:
+          path: "**/node_modules"
+          key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
       - name: Install npm dependencies
         run: yarn
       - name: checking the linting
         run: yarn lint
-  Testing:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v2
-
-      - name: NodeJS
-        uses: actions/setup-node@v2
-        with:
-          node-version: 14
-      - name: Install npm dependencies
-        run: yarn
-      - name: Checking Testing
+      - name: Check Testing
         run: yarn test
+      - name: Build
+        run: yarn build
+      - name: Deployment
+        id: vercel-action
+        uses: amondnet/vercel-action@v20
+        with:
+          vercel-token: ${{ secrets.VERCEL_TOKEN }} # Required
+          vercel-org-id: ${{ secrets.ORG_ID}} #Required
+          vercel-project-id: ${{ secrets.PROJECT_ID}} #Required
+          working-directory: ./
+      - name: Preview URL
+        run: echo ${{ steps.vercel-action.outputs.preview-url }}

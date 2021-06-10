@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "public": false,
+  "github": {
+    "enabled": false
+  },
+  "builds": [
+    { "src": "./build/**", "use": "@now/static" }
+  ],
+  "routes": [
+    { "src": "/(.*)", "dest": "build/$1" }
+  ]
+}
