@@ -41,6 +41,6 @@ jobs:
           vercel-token: ${{ secrets.VERCEL_TOKEN }} # Required
           vercel-org-id: ${{ secrets.ORG_ID}} #Required
           vercel-project-id: ${{ secrets.PROJECT_ID}} #Required
-          working-directory: build
+          working-directory: ./
       - name: Preview URL
         run: echo ${{ steps.vercel-action.outputs.preview-url }}
