@@ -6460,10 +6460,10 @@ jest-config@^25.5.4:
     pretty-format "^25.5.0"
     realpath-native "^2.0.0"
 
-jest-css-modules-transform@4.2.1:
-  version "4.2.1"
-  resolved "https://registry.yarnpkg.com/jest-css-modules-transform/-/jest-css-modules-transform-4.2.1.tgz#af4275d7757a52aa937e93a93bb4bb5b6cda873d"
-  integrity sha512-MHC6hj80F2bDjwVrPM9Bun2lI4ezPQ0OU6bHc1Tp3lLqsl+VSqs5VFAa5DTH4LgiFgYw2XyQfKlUAk1vHaPBHA==
+jest-css-modules-transform@4.3.0:
+  version "4.3.0"
+  resolved "https://registry.yarnpkg.com/jest-css-modules-transform/-/jest-css-modules-transform-4.3.0.tgz#e3599b6b9326230f9c127953aca99f91d9286ab1"
+  integrity sha512-0ACv/lpFK3oUdNkCZTJ6t5X4jUzGw2YnqBQz2fd+RwrGex+C92e0KSkkWmGUdG9wJ8emapi1Xm1IIqUqdkN3/g==
   dependencies:
     camelcase "^6.2.0"
     postcss "^7.0.30 || ^8.0.0"
