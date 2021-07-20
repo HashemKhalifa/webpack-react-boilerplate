@@ -102,7 +102,7 @@
     "enzyme-adapter-react-16": "1.15.6",
     "eslint": "7.31.0",
     "eslint-config-airbnb": "18.2.1",
-    "eslint-config-prettier": "7.2.0",
+    "eslint-config-prettier": "8.3.0",
     "eslint-webpack-plugin": "2.5.4",
     "eslint-plugin-import": "2.23.4",
     "eslint-plugin-jest": "23.20.0",
