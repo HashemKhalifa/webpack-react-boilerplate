@@ -103,7 +103,7 @@
     "eslint": "7.32.0",
     "eslint-config-airbnb": "18.2.1",
     "eslint-config-prettier": "7.2.0",
-    "eslint-webpack-plugin": "2.5.4",
+    "eslint-webpack-plugin": "2.6.0",
     "eslint-plugin-import": "2.25.3",
     "eslint-plugin-jest": "23.20.0",
     "eslint-plugin-jsx-a11y": "6.5.1",
