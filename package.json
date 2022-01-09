@@ -112,7 +112,7 @@
     "eslint-watch": "7.0.0",
     "eslint-webpack-plugin": "2.6.0",
     "file-loader": "6.2.0",
-    "html-webpack-plugin": "4.5.2",
+    "html-webpack-plugin": "5.5.0",
     "husky": "6.0.0",
     "identity-obj-proxy": "3.0.0",
     "jest": "25.5.4",
