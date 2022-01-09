@@ -79,5 +79,5 @@ webpack
 - [Style](https://github.com/webpack-contrib/style-loader) & [CSS Loader](https://github.com/webpack-contrib/css-loader) & [SASS-loader](https://github.com/webpack-contrib/sass-loader)
 - [CSS modules](https://github.com/css-modules/css-modules) [ Isolated style based on each component ]
 - [Browsers list](https://github.com/browserslist/browserslist) [ Share target browsers between different front-end tools, like Autoprefixer, Stylelint and babel-preset-env ]
-- [React hot loader](https://github.com/gaearon/react-hot-loader)
+  [React Fast Refresh](https://github.com/pmmmwh/react-refresh-webpack-plugin)[For react hot module replacement]
 - [Webpack dev serve](https://github.com/webpack/webpack-dev-server)

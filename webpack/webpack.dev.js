@@ -1,5 +1,4 @@
-const webpack = require('webpack');
-
+const ReactRefreshWebpackPlugin = require('@pmmmwh/react-refresh-webpack-plugin');
 const commonPaths = require('./paths');
 
 module.exports = {
@@ -11,6 +10,18 @@ module.exports = {
   },
   module: {
     rules: [
+      {
+        test: /\.(js|jsx)$/,
+        loader: 'babel-loader',
+        exclude: /(node_modules)/,
+        options: {
+          presets: ['@babel/react'],
+          plugins: [
+            ['import', { libraryName: 'antd', style: true }],
+            require.resolve('react-refresh/babel'),
+          ].filter(Boolean),
+        },
+      },
       {
         test: /\.(css|scss)$/,
         use: [
@@ -35,5 +46,5 @@ module.exports = {
     compress: true,
     hot: true,
   },
-  plugins: [new webpack.HotModuleReplacementPlugin()],
+  plugins: [new ReactRefreshWebpackPlugin()],
 };
