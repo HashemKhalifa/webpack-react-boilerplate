@@ -7438,10 +7438,10 @@ kleur@^3.0.3:
   resolved "https://registry.yarnpkg.com/kleur/-/kleur-3.0.3.tgz#a79c9ecc86ee1ce3fa6206d1216c501f147fc07e"
   integrity sha512-eTIzlVOSUR+JxdDFepEYcBMtZ9Qqdef+rnzWdRZuMbOywu5tO2w2N7rqjoANZ5k9vywhL6Br1VRjUIgTQx4E8w==
 
-koa-connect@2.1.0:
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/koa-connect/-/koa-connect-2.1.0.tgz#16bce0a917c4cb24233aaac83fbc5b83804b4a1c"
-  integrity sha512-O9pcFafHk0oQsBevlbTBlB9co+2RUQJ4zCzu3qJPmGlGoeEZkne+7gWDkecqDPSbCtED6LmhlQladxs6NjOnMQ==
+koa-connect@2.1.1:
+  version "2.1.1"
+  resolved "https://registry.yarnpkg.com/koa-connect/-/koa-connect-2.1.1.tgz#1e7c7a32e7b689dd4da6617ed5112ee259b0ced4"
+  integrity sha512-ejvbGKYS6di4LUSS+6E+Z5ZVev9RqThLm3NfZjb9QHZMASLvnr4eDTImKcGlQXFrtVpMTyTovZ+Hcl6JbBuFNA==
 
 language-subtag-registry@~0.3.2:
   version "0.3.21"
